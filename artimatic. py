@@ -1,0 +1,11 @@
+n=int(input())
+for I in range (n):
+    b=int(input())
+    c=list (map(int, input(). split()))
+    if sum(c)==b:
+        print (0)
+    elif b>sum(c):
+        print (1) 
+    else :
+        print (sum(c)-b)
+           
