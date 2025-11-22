@@ -1,0 +1,13 @@
+for I in range (int(input())):
+    b=int(input())
+    b=list (input( ))
+    c=sorted (set(b))
+    m={}
+    for i in range (len(c)):
+        m[c[i]]=c[len(c)-1-i]
+        m[c[len(c)-1-i]]=c[i]
+    c=''     
+    for I in b:
+         c+=m[I]
+    print (c)    
+         
