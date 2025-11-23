@@ -1,0 +1,9 @@
+for I in range (int(input())):
+    b=int(input())
+    c=b*(b+1)//2
+    I1 =1
+    I  =0
+    while pow(2, I) <=b:
+        c-=2*pow(2, I)
+        I+=1
+    print (c)    
