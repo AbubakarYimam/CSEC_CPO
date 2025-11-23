@@ -1,0 +1,6 @@
+l=sorted (list (map(int, input(). split())))
+if l[-1]-l[0]>9:
+    print ('check again')
+else :
+    print ('final',l[1])  
+    
