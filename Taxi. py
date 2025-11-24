@@ -1,0 +1,16 @@
+n=input ()
+b=list (map(int, input(). split()))
+s1=b. count(1)
+s2=b. count (2)
+s3=b. count (3)
+s4=b. count (4)
+taxi =s4
+taxi+=s3
+s1=max(0,s1-s3)
+taxi +=s2//2
+if s2%2==1:
+    taxi +=1
+    s1=max(0,s1-2)
+taxi+=(s1+3 )//4    
+print (taxi)    
+    
