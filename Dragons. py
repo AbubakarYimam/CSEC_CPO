@@ -1,0 +1,20 @@
+m, n=map(int,input(). split())
+f=m
+q=0
+l=[]
+t=1
+for I in range (n):
+    d,c=map(int,input(). split())
+    l.append((d,c))
+l.sort()    
+for d,c in l:
+    if d<m:
+        m+=c
+    elif m<=d:
+        t=0
+        print ('NO')  
+        break 
+if t!=0:
+    print ('YES')
+
+        
