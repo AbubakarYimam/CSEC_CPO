@@ -1,0 +1,6 @@
+for i in range(int(input())):
+    b=int(input())
+    if b%2==1:
+        print(0)
+    else:
+        print(b//4 + 1)    
