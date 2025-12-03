@@ -1,0 +1,15 @@
+m=0
+b=0
+h=int(input())
+n=input()
+for i in range(h-1):
+   v=input()
+   if v==n:
+        m+=1
+   else :
+    f=v
+    b+=1   
+if b>m:
+    print(f)      
+else :
+    print(n)    
