@@ -1,0 +1,15 @@
+for I in range (int(input())):
+    b=int(input())
+    c=list(map(int, input(). split()))
+    le=0
+    lo=0
+    for c in c:
+        if c %2==0:
+            le+=c
+        else :
+            lo+=c
+    if le>lo:
+        print ('YES') 
+    else :
+        print ('NO')         
+    
