@@ -1,0 +1,13 @@
+for i in range (int(input())):
+    r1=input()
+    r2=input()
+    r3=input()
+    a=r1.count("A")+r2.count("A")+r3.count("A")
+    b=r1.count("B")+r2.count("B")+r3.count("B")
+    c=r1.count("C")+r2.count("C")+r3.count("C")
+    if a==min(a,b,c):
+        print("A")
+    elif b==min(a,b,c):
+        print("B")    
+    else:
+        print("C")    
