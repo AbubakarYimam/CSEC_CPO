@@ -1,0 +1,12 @@
+for i in range(int(input())):
+    n=int(input())
+    dic={}
+    for c in range(1,n+1):
+        a,b=map(int,input().split())
+        if a<11:
+            dic[b]=c
+    b=list(dic.keys())
+    b.sort()
+    g=b[-1]
+    print(dic[g])
+    
