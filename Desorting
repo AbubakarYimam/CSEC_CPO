@@ -1,0 +1,10 @@
+for i in range(int(input())):
+    n=int(input())
+    l=list(map(int,input().split()))
+    k=[]
+    if sorted(l)==l:
+        for c in range(n-1):
+           k.append(l[c+1]-l[c])
+        print(min(k)//2+1)
+    else:
+        print(0)           
