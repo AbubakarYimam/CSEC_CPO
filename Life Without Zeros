@@ -1,0 +1,12 @@
+n=int(input())
+m=int(input())
+Sum=n+m
+n1=str(n).replace("0","")
+m1=str(m).replace("0","")
+sum1=int(n1)+int(m1)
+Sum=str(Sum).replace("0","")
+if Sum==str(sum1):
+   
+   print("YES")
+else :
+   print("NO")          
