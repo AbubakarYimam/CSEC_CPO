@@ -1,0 +1,13 @@
+n, m=map(int, input(). split())
+l=list(map(int, input(). split()))
+b=0
+c=l[b]-1
+while b<m-1:
+    if l[b]>l[b+1]:
+        c+=n-l[b]+l[b+1]
+        
+    elif l[b]<l[b+1]:
+        c+=l[b+1]-l[b]
+    b+=1    
+print (c)
+   
