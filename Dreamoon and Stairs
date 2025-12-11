@@ -1,0 +1,11 @@
+m,n =map(int , input().split())
+if m%2==0:
+     v=(m//2)
+else :
+    v=(m//2 +1)     
+for i in range (v,m+1):
+    if i%n==0:
+        print (i)
+        break
+else :
+    print(-1)        
