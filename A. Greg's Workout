@@ -1,0 +1,21 @@
+n=int(input())
+m=list(map(int, input(). split()))
+chest=0
+biceps =0
+back =0
+l=['chest', 'biceps','back']
+for I in range (n):
+    if I %3==0:
+        chest+=m[I]
+    elif I %3==1:
+        biceps +=m[I]
+    else :
+        back +=m[I]
+if max(chest, biceps, back) ==chest:
+    print (l[0])
+elif max(chest, biceps, back) ==biceps :
+    print (l[1])
+else :
+    print (l[2])  
+    
+    
