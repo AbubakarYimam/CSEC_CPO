@@ -1,0 +1,9 @@
+for i in range (int(input())):
+     a,b =map(int,input().split())
+     c=input()
+     re=0
+     for i in ["A","B","C","D","E","F","G"]:
+          if c.count(i)<b:
+               re+=b-c.count(i)
+     print(re)          
+               
