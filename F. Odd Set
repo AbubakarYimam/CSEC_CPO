@@ -1,0 +1,13 @@
+for i in range (int(input())):
+    l=input()
+    b=list(map(int,input().split()))
+    od=ev=0
+    for i in b :
+        if i %2==0:
+            ev+=1
+        else :
+            od+=1
+    if od==ev:
+        print("Yes")
+    else :
+        print("No")                
