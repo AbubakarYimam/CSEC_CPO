@@ -1,0 +1,4 @@
+for I in range (int(input())):
+    c=int(input())
+    v=list (map(int, input(). split()))
+    print (c*max(v))
