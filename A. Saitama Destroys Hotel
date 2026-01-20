@@ -1,0 +1,16 @@
+n,m=map(int,input().split())
+l=[]
+d=0
+c=0
+for i in range(n):
+    f,t=map(int,input().split())
+    l.append((f,t))
+l.sort(reverse=True)    
+for i,j in l:
+    c+=m-i
+    d+=c
+    m-=c
+    c=0
+    if d<j:
+        d+=j-d
+print(d+m)
