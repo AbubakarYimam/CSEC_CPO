@@ -1,0 +1,12 @@
+for i in range (int (input())):
+    a,b=map(int,input().split())
+    c=list(map(int,input().split()))
+    d=list(map(int,input().split()))
+    c.sort()
+    d.sort(reverse=True)
+    for j in range (b):
+        if c[j]<d[j]:
+            c[j]=d[j]
+        else:
+            break
+    print(sum(c))        
