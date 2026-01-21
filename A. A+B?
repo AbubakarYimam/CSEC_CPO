@@ -1,0 +1,12 @@
+n=int(input())
+l=[]
+for i in range(n):
+    m=list(input())
+    m1=m[0]
+    b=int(m1)
+    m2=m[-1]
+    b1=int(m2)
+    k=b+b1
+    l.append(k)
+for i in l:
+    print(i)
