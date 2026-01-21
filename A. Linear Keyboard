@@ -1,0 +1,11 @@
+for i in range (int(input())):
+    a=input()
+    s=list(input())
+    l=[]
+    if len(set(s))==1:
+        print(0)
+    else :
+        for j in range (len(s)-1):
+            l.append(abs(a.index(s[j])  - a.index(s[j+1])))           
+        print(sum(l))        
+
