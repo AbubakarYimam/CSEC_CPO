@@ -1,0 +1,12 @@
+for i in range (int(input())):
+    n=int(input())
+    l=input()
+    h=""
+    for j in l:
+        if j=="U":
+            h+="D"
+        elif  j=="D":
+            h+="U"   
+        else:
+            h+=j
+    print(h)            
