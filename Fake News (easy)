@@ -1,0 +1,16 @@
+n=input()
+s="heidi"
+d=0
+i=0
+while (d<len(s) and i<len(n)):
+    if len(n)<5:
+        print("NO")
+    elif  s[d]==n[i]:
+        d+=1
+        i+=1
+    else:    
+        i+=1
+if d==5:
+    print("YES")
+else:
+    print("NO")    
