@@ -1,0 +1,6 @@
+n,m=map(int,input().split())
+l=[n//m]*m
+k=n-((n//m)*m)
+for i in range(k):
+    l[m-1-i]+=1
+print(*l)
