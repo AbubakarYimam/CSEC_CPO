@@ -1,0 +1,15 @@
+l=[]
+h=0
+u=1
+for i in range(int(input())):
+    n=input()
+    l.append(n)
+for j in range(len(n)):
+  if u==1:
+    for c in range(len(l)-1):
+        if l[c][j]!=l[c+1][j]:
+            u=0
+            break
+  if u==1:      
+    h+=1    
+print(h)
