@@ -1,0 +1,12 @@
+n=input()
+if "9."in n:
+    print("GOTO Vasilisa.")
+else:
+    if "." in n:
+        inte,dec=n.split(".")
+        if int(dec[0])>=5 and dec:
+            print(int(inte)+1)
+        else:
+            print(inte)    
+    else:
+        print(n)        
