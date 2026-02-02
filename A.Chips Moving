@@ -1,0 +1,12 @@
+n=int(input())
+l=list(map(int, input(). split()))
+o=0
+e=0
+for I in range (len(l)):
+    if l[I]%2==0:
+        o+=1
+    else :
+        e+=1
+print (min(o,e))
+    
+        
