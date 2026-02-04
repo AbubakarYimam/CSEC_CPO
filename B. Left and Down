@@ -1,0 +1,10 @@
+from math import *
+
+t = int(input())
+for _ in range(t):
+    a, b, k = map(int, input().split())
+    v=gcd(a,b)
+    if a//v<=k and b//v<=k:
+        print(1)
+    else:
+        print(2)    
