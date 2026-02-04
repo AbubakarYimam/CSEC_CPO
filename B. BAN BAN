@@ -1,0 +1,11 @@
+for i in range (int(input())):
+    n=int(input())
+    print((n+1)//2)
+    r=2
+    l=3*n
+    while r<l:
+        print(r,l)
+        r+=3
+        l-=3
+        
+        
