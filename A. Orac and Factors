@@ -1,0 +1,11 @@
+from math import *
+for i in range (int(input())):
+    a,b=map(int,input().split())
+    d=2
+    for c in range(1):
+        d=2
+        while  a%d!=0:
+            d+=1
+        a+=d
+    g=(b-1)*2    
+    print(a+g)        
