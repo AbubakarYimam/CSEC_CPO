@@ -1,0 +1,31 @@
+import java.util.Scanner
+
+fun main() {
+    val sc = Scanner(System.`in`)
+    if (!sc.hasNextInt()) return
+    val t = sc.nextInt()
+
+    repeat(t) {
+        val n = sc.nextInt()
+        val a = IntArray(n) { sc.nextInt() }
+        
+        val unorderable = mutableListOf<Int>()
+        
+        // The first sofa is always orderable because there's nothing before it.
+        var minPriceSoFar = a[0] 
+
+        for (i in 1 until n) {
+            if (a[i] > minPriceSoFar) {
+                // If this sofa is more expensive than the cheapest one we've 
+                // already passed, no one will ever reach this one.
+                unorderable.add(i + 1)
+            } else {
+                // Update the minimum price seen so far
+                minPriceSoFar = a[i]
+            }
+        }
+
+        println(unorderable.size)
+        println(unorderable.joinToString(" "))
+    }
+}
