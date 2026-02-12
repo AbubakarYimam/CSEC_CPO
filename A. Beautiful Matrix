@@ -1,0 +1,13 @@
+d={}
+w=0
+for i in range(1,5+1):
+    n=list(input().split())
+    if "1" in n:
+        d[i]=n
+        w=i
+k=0
+for c in d:
+    k+=(abs(c-3))
+g=d[w].index("1")
+k+=(abs(g+1-3))
+print(k)
