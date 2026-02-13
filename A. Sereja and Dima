@@ -1,0 +1,27 @@
+n=int(input())
+l=list(map(int,input().split()))
+s,d=0,0
+c=0
+f,r=-1,0
+while c<len(l):
+    if l[r]>l[f]:
+        s+=l[r]
+        c+=1
+        r+=1
+    else :
+        s+=l[f]
+        c+=1
+        f-=1
+    if c>=len(l):
+        break    
+    if l[r]>l[f]:
+        d+=l[r]
+        c+=1
+        r+=1
+    else :
+        d+=l[f]
+        c+=1
+        f-=1
+print(s,d)        
+
+    
