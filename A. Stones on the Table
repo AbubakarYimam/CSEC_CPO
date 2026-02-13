@@ -1,0 +1,12 @@
+n=int(input())
+m=input()
+h=0
+g=2
+p=0
+while g<=len(m) :
+    if "RR" in m[p:g]  or "GG" in m[p:g]  or "BB" in m[p:g] :
+           h+=1
+    g+=1
+    p+=1
+
+print(h)
