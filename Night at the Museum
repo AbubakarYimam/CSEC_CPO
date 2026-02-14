@@ -1,0 +1,13 @@
+n=input()
+l="abcdefghijklmnopqrstuvwxyz"
+c="a"
+t=0
+for i in range (len(n)):
+  
+    a=l.index(n[i])
+    b=l.index(c)
+    dif=abs(a-b)
+    dif1=26-dif 
+    t+=min(dif,dif1)
+    c=n[i]
+print(t)   
