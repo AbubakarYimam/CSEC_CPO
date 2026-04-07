@@ -1,0 +1,12 @@
+for i in range(int(input())):
+    n=input()
+    l=""
+    n[::-1]
+    for j in n:
+        if "p"==j:
+            l+="q"
+        elif "q"==j:
+            l+="p"
+        else:
+            l+=j     
+    print(l[::-1])          
